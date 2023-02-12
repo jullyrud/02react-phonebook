@@ -1,7 +1,7 @@
 import styled from '@emotion/styled'
 
 export const ContactList = styled.ul`
-
+padding-left: 5px;
 
 `
 export const ContactItem = styled.li`

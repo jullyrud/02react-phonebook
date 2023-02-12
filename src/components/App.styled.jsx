@@ -1,7 +1,7 @@
 import styled from '@emotion/styled'
 
 export const Wrap = styled.div`
-    width: 350px;
+    max-width: 320px;
     height: 80vh;
     background: linear-gradient(180deg, #0a5e7b 0%, #232923 100%);
     margin-top: 30px;
