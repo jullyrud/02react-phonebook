@@ -51,7 +51,7 @@ export class App extends Component {
 )
   
   filteredContacts = () => {
-    return this.state.contacts.filter(cont => cont.name.includes(this.state.filter))
+    return this.state.contacts.filter(cont => cont.name.toLowerCase().includes(this.state.filter.toLowerCase()))
    }
   
 render()
