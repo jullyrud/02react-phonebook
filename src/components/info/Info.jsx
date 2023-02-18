@@ -1,3 +1,4 @@
+import PropTypes from 'prop-types';
 import { ContactList, ContactItem, DelBtn, ContInfo } from './Info.styled'
 
 export function Info({ contacts, onDelBtnClick }) {
@@ -11,4 +12,9 @@ export function Info({ contacts, onDelBtnClick }) {
             ) )}
         </ContactList>
     )
+}
+
+Info.prototype = {
+    contacts: PropTypes.func.isRequired,
+    onDelBtnClick: PropTypes.func.isRequired,
 }

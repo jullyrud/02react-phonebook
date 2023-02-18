@@ -1,5 +1,7 @@
 import React, { Component } from "react";
 import { AddForm, Input, Label, Button } from './Form.styled'
+import PropTypes from 'prop-types';
+
 
 export class Form extends Component {
 state = {
@@ -61,4 +63,8 @@ reset = () => {
   }
 
     
+}
+
+Form.propTypes = {
+  inSubmit: PropTypes.func.isRequired
 }

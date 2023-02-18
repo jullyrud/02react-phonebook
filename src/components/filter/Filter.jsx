@@ -1,3 +1,4 @@
+import PropTypes from 'prop-types';
 
 export function Filter  ({onFilterChange}) {
 
@@ -8,4 +9,8 @@ export function Filter  ({onFilterChange}) {
         </>
     )
 
+}
+
+Filter.prototypev = {
+    onFilterChange: PropTypes.func.isRequired,
 }

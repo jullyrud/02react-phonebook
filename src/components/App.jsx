@@ -57,15 +57,15 @@ export class App extends Component {
 render()
   {
    return (
-     <>
-      <Wrap>
-         <h1>Phonebook</h1>
-          <Form inSubmit={this.onSubmitHandler} />
-          <h2>Contacts</h2>
-          <Filter onFilterChange={this.onFilterChange} />
-          <Info contacts={this.filteredContacts()}
-            onDelBtnClick={this.deleteContact} />
-      </Wrap>
+        <>
+          <Wrap>
+            <h1>Phonebook</h1>
+            <Form inSubmit={this.onSubmitHandler} />
+            <h2>Contacts</h2>
+            <Filter onFilterChange={this.onFilterChange} />
+            <Info contacts={this.filteredContacts()}
+              onDelBtnClick={this.deleteContact} />
+          </Wrap>
        </>
     ) 
   }
